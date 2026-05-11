@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "lfc-mcp-scheduler": {
+      "command": "/Users/pantingting/Projects/lfc-mcp/.venv/bin/python3",
+      "args": [
+        "-m",
+        "lfc_mcp_scheduler.server_v3"
+      ],
+      "cwd": "/Users/pantingting/Projects/lfc-mcp",
+      "displayName": "LFC 日程管理",
+      "timeout": 30000
+    }
+  }
+}
