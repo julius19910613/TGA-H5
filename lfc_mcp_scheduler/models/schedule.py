@@ -67,8 +67,8 @@ class ScheduleEvent(BaseModel):
         return v
     
     def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary."""
-        return self.model_dump()
+        """Convert to dictionary with JSON-serializable values."""
+        return self.model_dump(mode='json')
     
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'ScheduleEvent':
@@ -124,8 +124,8 @@ class Schedule(BaseModel):
         ]
     
     def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary."""
-        return self.model_dump()
+        """Convert to dictionary with JSON-serializable values."""
+        return self.model_dump(mode='json')
     
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'Schedule':
