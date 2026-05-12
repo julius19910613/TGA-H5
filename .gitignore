@@ -29,3 +29,4 @@ htmlcov/
 
 # Exports (generated files)
 exports/
+.vercel
